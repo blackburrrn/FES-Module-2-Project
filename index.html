@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
     <section>
         <nav>
-            <img src="./assets/HTML Practise Assets/FES.svg" alt="Logo" />
+            <img src="./assets/HTML Practise Assets/FES.svg" class="logo" alt="Logo" />
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#discord">Discord</a></li>
@@ -17,9 +19,11 @@
         </nav>
         <div>
         <header>
+            <div class="row">
             <h1> Best Place to Learn Frontend</h1>
-            <p>Go from absolute beginner to pro with a simplified curriculum and hands-on projects.</p>
+            <p class="subheader"> Go from absolute beginner to pro with a simplified curriculum and hands-on projects.</p>
             <button>Start Now</button>
+            </div>
         </header>
         </div>
         <div>
@@ -31,21 +35,27 @@
 
     <section id="about">
     <h2>About</h2>
+    <div class="section__description">
+    <div class="section__description--wrapper">
     <div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, voluptas ipsam aperiam quis vitae vero illo quisquam corporis vel eos consequuntur illum dolor aliquam cum modi voluptatibus perferendis autem delectus.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit quas aliquid obcaecati culpa libero iusto voluptate? Ipsa, omnis praesentium ab facere minima, reprehenderit consequatur eligendi in aperiam provident illo?</p>
+        <p class="section__description--para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, voluptas ipsam aperiam quis vitae vero illo quisquam corporis vel eos consequuntur illum dolor aliquam cum modi voluptatibus perferendis autem delectus.</p>
+        <p class="section__description--para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit quas aliquid obcaecati culpa libero iusto voluptate? Ipsa, omnis praesentium ab facere minima, reprehenderit consequatur eligendi in aperiam provident illo?</p>
     </div>
-    <figure>
+    <figure class="about__image--wrapper">
         <img src="./assets/HTML Practise Assets/about.jpg" alt="Man Typing">
     </figure>
+    </div>
 
-    <section id="discord"></section>
+    <section id="discord">
     <h2>Discord</h2>
-    <figure>
+    <div class="section__description">
+    <figure class="about__image--wrapper">
         <img src="./assets/HTML Practise Assets/discord.png" alt="Discord Logo">
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, blanditiis inventore nisi rerum nulla libero tempore id enim fugit ex odio reprehenderit illo sequi iure itaque aliquid adipisci doloremque magni!</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto doloribus nihil dolores corporis. Necessitatibus reprehenderit aliquid excepturi, dolorem ipsa obcaecati odit reiciendis, error ut, cumque possimus repellat esse adipisci alias?</p>
+    </figure>
+    <div class="section__description--wrapper">
+        <p class="section__description--para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, blanditiis inventore nisi rerum nulla libero tempore id enim fugit ex odio reprehenderit illo sequi iure itaque aliquid adipisci doloremque magni!</p>
+        <p class="section__description--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto doloribus nihil dolores corporis. Necessitatibus reprehenderit aliquid excepturi, dolorem ipsa obcaecati odit reiciendis, error ut, cumque possimus repellat esse adipisci alias?</p>
+    </div>
     </div>
     </section>
 
@@ -56,18 +66,20 @@
         <input type="email" placeholder="john.doe@placeholder.com">
         <label for="message">Message:</label>
         <textarea placeholder="Your message here..."></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit">Contact Us</button>
     </form>
     </section>
    </main>
 
    <footer>
-    <img src="assets/HTML Practise Assets/FES.svg" alt="FES Logo">
+    <img class="footer__logo" src="./assets/HTML Practise Assets/FES.svg" alt="FES Logo">
+    <div class="footer__links">
     <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#discord">Discord</a></li>
-        <li><a href="">Courses</a></li>
+        <li class="footer__link"><a href="#about">About</a></li>
+        <li class="footer__link"><a href="#contact">Contact</a></li>
+        <li class="footer__link"><a href="#discord">Discord</a></li>
+        <li class="footer__link"><a href="">Courses</a></li>
     </ul>
+    </div>
     <p>&copy; 2026 Frontend Simplified. All rights reserved.</p>
    </footer>
